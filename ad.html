@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <title>広告ページ</title>
     
     <!-- Google Analytics -->
@@ -12,28 +12,37 @@
       gtag('js', new Date());
       gtag('config', 'G-Q3X9BKY9LV');
     </script>
-    
+
+    <!-- Content Security Policy（安全性向上） -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self' https:;
+        script-src 'self' https:;
+        style-src 'self' https: 'unsafe-inline';
+        frame-src https:;
+    ">
+
     <style>
-        .ad-container {
-            position: relative;
-            display: inline-block;
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+            text-align: center;
         }
 
-        .bored-text {
-            position: absolute;
-            bottom: -15px;
-            right: -30px;
-            font-size: 0.3em; /* Changed from 0.5em to 0.3em to make it smaller */
-            white-space: nowrap;
+        .ad-container {
+            margin-top: 20px;
+        }
+
+        h1 {
+            font-size: 1.2em;
         }
     </style>
 </head>
 <body>
-    <h1><span class="ad-container">広告募集中です　連絡は以下まで tukamotoasobi@gmail.com<span class="bored-text"></span></span></h1>
+    <h1>広告募集中です<br>連絡は以下まで tukamotoasobi@gmail.com</h1>
     
-    <!-- PropellerAdsのバナー広告コード例（実際は配布されたコードに差し替え） -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7274920444414758"
      crossorigin="anonymous"></script>
-    </body>
-</html>
 
+
+</body>
+</html>
