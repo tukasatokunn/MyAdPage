@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>広告ページ</title>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q3X9BKY9LV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Q3X9BKY9LV');
+    </script>
 
     <!-- Content Security Policy（安全性向上） -->
     <meta http-equiv="Content-Security-Policy" content="
@@ -29,14 +38,17 @@
     </style>
 </head>
 <body>
-    <h1>広告募集中です<br>連絡は以下まで tukamotoasobi@gmail.com</h1>
+     <!-- <h1>広告募集中です<br>連絡は以下まで tukamotoasobi@gmail.com</h1> --> 
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7274920444414758"
+     crossorigin="anonymous"></script>
 
     <div class="ad-container">
-        <!-- 広告は iframe で分離 -->
-        <iframe src="https://your-ad-provider.com/ad.html"
+        <iframe src="https://www.example.com/?utm_source=google&utm_medium=cpc&utm_campaign=summer_sale&utm_content=banner_ad"
                 sandbox="allow-scripts allow-same-origin"
                 style="width:300px; height:250px; border:none;">
         </iframe>
     </div>
+
+
 </body>
 </html>
