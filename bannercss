@@ -1,30 +1,11 @@
-/* バナー全体のラッパー */
-.banner-wrapper {
-  width: 100%;           /* GUI に合わせて広がる */
-  margin: 0 auto;
+body > *:not(#banner) {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+html, body {
+  margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  background-color: #fff;
-  border: none;
-  display: block;
-}
-
-/* クリック範囲を画像全体に */
-.banner-link {
-  display: block;
-}
-
-/* バナー画像 */
-.banner-link img {
-  width: 100%;           /* GUI に合わせて広がる・縮む */
-  height: auto;          /* アスペクト比維持 */
-  display: block;
-  border-radius: 6px;
-  transition: transform .2s ease-out, box-shadow .2s ease-out;
-}
-
-/* ホバー時の軽い演出 */
-.banner-link:hover img {
-  transform: translateY(-1px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
