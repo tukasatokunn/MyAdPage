@@ -1,9 +1,10 @@
 /* バナー全体のラッパー */
 .banner-wrapper {
   width: 100%;
-  max-width: 728px;      /* 好きな最大幅に調整（例: 728x90 のバナーなど） */
+  height: 100%;
+
   margin: 0 auto;        /* 中央寄せ */
-  padding: 8px 0;        /* 上下に少し余白 */
+  padding: 0px 0;        /* 上下に少し余白 */
   box-sizing: border-box;
 }
 
