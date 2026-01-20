@@ -1,0 +1,12 @@
+.banner {
+  width: 100%;
+  max-width: 1200px;   /* PCでの最大幅 */
+  margin: 0 auto;
+}
+
+/* 画像をウィンドウサイズに合わせて拡縮 */
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
