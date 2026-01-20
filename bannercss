@@ -1,0 +1,30 @@
+/* バナー全体のラッパー */
+.banner-wrapper {
+  width: 100%;
+  max-width: 728px;      /* 好きな最大幅に調整（例: 728x90 のバナーなど） */
+  margin: 0 auto;        /* 中央寄せ */
+  padding: 8px 0;        /* 上下に少し余白 */
+  box-sizing: border-box;
+}
+
+/* クリック範囲を画像全体に */
+.banner-link {
+  display: block;
+}
+
+/* バナー画像 */
+.banner-link img {
+  display: block;
+  width: 100%;           /* 親要素にフィットさせる */
+  height: auto;          /* アスペクト比維持 */
+  border-radius: 8px;    /* 角丸（不要なら削除） */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* ふんわり影 */
+  object-fit: cover;     /* 画像トリミングの仕方（必要に応じて） */
+}
+
+/* ホバー時の軽い演出 */
+.banner-link:hover img {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-out;
+}
